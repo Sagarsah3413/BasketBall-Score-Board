@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BasketBall Score Board 🏀</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <div>
+    <div class="heading"><h1>Basket Ball Score Board</h1> </div>
+    <div class="heading"><h3 id="date">DATE</h3></div>
+    <div class="container">
+      
+      <div class="home">
+        <div class="homeDiv"><h1>Home</h1></div>
+        
+        <p class="score" id="homeId">00</p>
+        <div class="btnvalue" >
+          <button id="one" onclick="haddone()" value="1">+1</button>
+          <button id="two" onclick="haddtwo()" value="2">+2</button>
+          <button id="three" onclick="haddthree()" value="3">+3</button>
+        </div>
+      </div>
+      <div class="save-reset">
+        <!-- <button class="saveResetClass">SAVE</button> -->
+        <button class="saveResetClass" onclick="resetAllScore()">RESET</button>
+      </div>
+      <div class="guest">
+        <div ><h1>Guest</h1></div>
+        <p class="score" id="guestId">00</p>
+      <div class="btnvalue">
+      <button id="one"  onclick="gaddone()" value="1">+1</button>
+      <button  id="two" onclick="gaddtwo()" value="2">+2</button>
+      <button id="three" onclick="gaddthree()" value="3">+3</button>
+      </div>    
+</div>
+    </div>
+<div id="saveScore">The Result & Score Will Appear Here</div>
+<!-- <div id="finalMessage"><h2>Click <button id="finalBtn" onclick="messageReset()">here</button> to continue.</h2></div> -->
+    <script src="app.js">
+     
+    </script>
+  </body>
+</html>
